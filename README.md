@@ -14,6 +14,7 @@ Hace el codigo sea mas mantenible y escalable
 Los tipos funcionan como documentacion del propio codigo
 
 ● ¿Cuál es su versión actual?
+11.13.0
 
 #Tema 2: Crear y ejecutar un proyecto
 ● ¿Cómo se instala TypeScript en un proyecto?
@@ -33,4 +34,12 @@ tsc: verifica los tipos y compila el código TypeScript a JavaScript.
 tsx: permite ejecutar archivos TypeScript directamente, sin necesidad de compilarlos previamente. No verifica los tipos.
 node: permite ejecutar archivos JavaScript. En las versiones actuales (Node.js 24 y 26), también puede ejecutar archivos .ts mediante type stripping, que elimina las anotaciones de tipos y ejecuta el JavaScript restante..
 
+#Tema 3: Tipos básicos
+● ¿Qué son los tipos string, number y boolean?
+
+● ¿Cómo se declara un array con tipo?
+
+● ¿Qué es un tipo unión?
+
+● ¿Por qué se recomienda evitar any?
 
