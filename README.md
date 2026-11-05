@@ -36,10 +36,18 @@ node: permite ejecutar archivos JavaScript. En las versiones actuales (Node.js 2
 
 #Tema 3: Tipos básicos
 ● ¿Qué son los tipos string, number y boolean?
+String son cadenas de texto, number son numeros enteros y decimales, boolean son valores logico (verdadero o falso) por ejemplo:
+let nombre: string = "Marcos";
+let edad: number = 20;
+let activo: boolean = false;
 
 ● ¿Cómo se declara un array con tipo?
+se delacara un array con tipo de la siguiente manera
+let numeros: number[] = [1, 2, 3];
 
 ● ¿Qué es un tipo unión?
+un tipo union es una característica de TypeScript que permite que una variable pueda aceptar dos o más tipos de datos diferentes. Se utiliza el símbolo | para indicar los tipos permitidos. La variable puede contener cualquiera de esos tipos, pero uno a la vez.
 
 ● ¿Por qué se recomienda evitar any?
+Porque any desactiva la verificacion, mientras que unkwon acepta cualquier valor, pero obliga a verificar antes de usarlo
 
