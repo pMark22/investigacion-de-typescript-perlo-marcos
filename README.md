@@ -51,3 +51,23 @@ un tipo union es una característica de TypeScript que permite que una variable 
 ● ¿Por qué se recomienda evitar any?
 Porque any desactiva la verificacion, mientras que unkwon acepta cualquier valor, pero obliga a verificar antes de usarlo
 
+#Tema 4: Funciones
+● ¿Cómo se indican los tipos de los parámetros?
+Se indican después del nombre de cada parámetro, utilizando dos puntos, esto permite establecer qué tipo de dato puede recibir la función.
+
+● ¿Cómo se indica el tipo de retorno?
+Se indica después del paréntesis de cierre de los parámetros con dos puntos, esto establece qué tipo de dato devuelve la función.
+
+● ¿Qué es un parámetro opcional?
+Es un parámetro que no es obligatorio al llamar a una función. Se indica colocando un signo de pregunta (?) después de su nombre. Esto permite decidir si se proporciona ese dato o no cada vez que se llama a la función.
+
+● ¿Qué es un parámetro por defecto?
+Es un parámetro que tiene un valor asignado de antemano. Por ejemplo, en una función para crear un usuario, el rol tiene el valor "USER" por defecto. Si no se indica otro rol al llamar a la función, se utiliza ese valor automáticamente. Pero también se puede cambiar manualmente, por ejemplo, indicando "ADMIN".
+por ejemplo:
+    function crear(nombre: string, rol: string = "USER"): void {
+        console.log(`Usuario ${nombre} con rol ${rol}`);
+    }
+
+    crear("Marcos");          // Rol: USER
+    crear("Marcos", "ADMIN"); // Rol: ADMIN
+
