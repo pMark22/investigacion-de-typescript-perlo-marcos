@@ -63,6 +63,7 @@ Es un parámetro que no es obligatorio al llamar a una función. Se indica coloc
 
 ● ¿Qué es un parámetro por defecto?
 Es un parámetro que tiene un valor asignado de antemano. Por ejemplo, en una función para crear un usuario, el rol tiene el valor "USER" por defecto. Si no se indica otro rol al llamar a la función, se utiliza ese valor automáticamente. Pero también se puede cambiar manualmente, por ejemplo, indicando "ADMIN".
+
 por ejemplo:
     function crear(nombre: string, rol: string = "USER"): void {
         console.log(`Usuario ${nombre} con rol ${rol}`);
@@ -71,3 +72,9 @@ por ejemplo:
     crear("Marcos");          // Rol: USER
     crear("Marcos", "ADMIN"); // Rol: ADMIN
 
+
+#Tema 5: Interfaces y type
+● ¿Qué es una interfaz y para qué sirve?
+● ¿Qué es un type?
+● ¿Cómo se declara una propiedad opcional?
+● ¿Cuándo conviene usar cada uno?

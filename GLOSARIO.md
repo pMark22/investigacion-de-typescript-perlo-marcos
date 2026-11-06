@@ -1,0 +1,4 @@
+Compilar: transformar el código fuente escrito en un lenguaje de alto nivel (como C++, Java o Rust) en código máquina o binario que la computadora pueda ejecutar directamente. Este proceso lo realiza un compilador, que analiza, optimiza y genera el ejecutable final.
+
+Transpilar: es un tipo especial de compilador que traduce código de un lenguaje fuente a otro, manteniendo la semántica del código fuente. A diferencia de los compiladores tradicionales, que generan código en lenguaje de máquina, los transpiladores crean código fuente legible y mantenible en otro lenguaje de alto nivel. Por ejemplo, un transpilador puede convertir código JavaScript en código compatible con navegadores más antiguos. Los transpiladores son útiles en el desarrollo web para adaptar código moderno a diferentes navegadores y plataformas.
+
