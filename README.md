@@ -75,6 +75,33 @@ por ejemplo:
 
 #Tema 5: Interfaces y type
 ● ¿Qué es una interfaz y para qué sirve?
+Es una estructura que permite definir cómo debe ser un objeto, indicando qué propiedades debe tener y qué tipos de datos pueden contener. Sirve para establecer una estructura y comprobar que los objetos cumplan con ella.
+
+ejemplo:
+interface Usuario {
+    id: number;
+    nombre: string;
+    email: string;
+}
+
 ● ¿Qué es un type?
+Es una forma de crear un nombre para un tipo de dato. Permite definir alias para tipos primitivos, uniones, tipos literales y estructuras de objetos.
+
+ejemplo:
+type ID = string | number;
+type Rol = "ADMIN" | "USER" | "GUEST";
+
 ● ¿Cómo se declara una propiedad opcional?
+Se declara colocando un signo de pregunta "?" después del nombre de la propiedad y antes de los dos puntos ":", la propiedad puede estar presente o no en un objeto.
+
+ejemplo:
+interface Usuario {
+    nombre: string;
+    edad?: number; //el usuario puede tener una edad o no.
+}
+
 ● ¿Cuándo conviene usar cada uno?
+interface: Estructuras de objetos y clases, sobre todo cuando se necesita extends
+type: Uniones (|), intersecciones (&), tipos literales ("ADMIN" | "USER") y alias de primitivos
+
+
