@@ -104,4 +104,32 @@ interface Usuario {
 interface: Estructuras de objetos y clases, sobre todo cuando se necesita extends
 type: Uniones (|), intersecciones (&), tipos literales ("ADMIN" | "USER") y alias de primitivos
 
+Tema 6: Enums y tipos literales
+● ¿Qué es un enum?
+Es una característica de TypeScript que permite definir un conjunto de valores con nombres. Sirve para representar estados u opciones que están previamente establecidas, evitando utilizar valores diferentes a los permitidos.
 
+por ejemplo:
+enum Estado {
+    PENDIENTE = "PENDIENTE",
+    COMPLETADO = "COMPLETADO",
+    CANCELADO = "CANCELADO",
+}
+
+let estadoTarea: Estado = Estado.PENDIENTE;
+
+● ¿Qué es un tipo literal?
+Es un tipo de dato que permite establecer valores específicos que una variable puede aceptar, en lugar de permitir cualquier texto o número.
+
+por ejemplo:
+type Estado = "PENDIENTE" | "COMPLETADO" | "CANCELADO";
+
+let estadoTarea: Estado = "PENDIENTE";
+
+● ¿En qué se parecen y en qué se diferencian?
+Se parecen porque ambos permiten definir un conjunto de valores permitidos. Se diferencian en que enum genera un objeto en JavaScript, mientras que los tipos literales solo sirven para verificar tipos y desaparecen al compilar.
+
+
+● ¿En qué situaciones se puede usar cada uno?
+enum: se puede utilizar cuando se necesita representar un conjunto de opciones o estados con nombres, por ejemplo, los estados de una tarea.
+
+tipo literal: conviene utilizarlo cuando se quieren limitar los valores que puede recibir una variable, por ejemplo, los roles de un usuario o los estados de una tarea, sin generar un objeto adicional en JavaScript.
